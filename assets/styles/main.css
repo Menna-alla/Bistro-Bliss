@@ -58,7 +58,7 @@ img {
   gap: 20px;
 }
 .container {
-  padding: 15px 0;
+  padding: 15px 16px;
   margin: auto;
 }
 @media (min-width: 768px) {
@@ -106,19 +106,19 @@ header .container nav input {
   appearance: none;
 }
 @media (max-width: 991px) {
-  header nav {
+  header {
     position: relative;
   }
-  header nav label img {
+  header label img {
     cursor: pointer;
   }
-  header nav input {
+  header  input {
     appearance: none;
   }
-  header nav input:checked + ul {
+  header  input:checked + ul {
     display: block;
   }
-  header nav ul {
+  header  ul {
     display: none;
     position: absolute;
     top: 50px;
@@ -132,7 +132,7 @@ header .container nav input {
     padding: 10px;
     color: var(--white);
   }
-  header nav ul li a:hover {
+  header  ul li a:hover {
     color: var(--btn);
   }
   header nav ul li:not(:last-child) {
@@ -140,26 +140,26 @@ header .container nav input {
   }
 }
 @media (min-width: 992px) {
-  header nav label,
-  header nav input {
+  header  label,
+  header  input {
     display: none;
   }
-  header nav ul {
+  header  ul {
     display: flex;
   }
-  header nav ul li {
+  header  ul li {
     padding: 10px;
   }
-  header nav ul li a {
+  header  ul li a {
     color: var(--white);
   }
-  header nav ul li a:hover {
+  header  ul li a:hover {
     color: var(--btn);
   }
 }
 
 .hero {
-  padding: 10px;
+  padding: 10px 10px;
   background-image: url(../images/bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -182,7 +182,7 @@ header .container nav input {
   padding: 10px;
 }
 .menu {
-  padding: 10px 0;
+  padding: 10px 10;
 }
 .menu .container .card-list .card {
   display: flex;
@@ -215,7 +215,7 @@ header .container nav input {
 }
 
 .about {
-  padding: 30px 0;
+  padding: 30px 10;
   background-color: var(--background);
 }
 .about .container .about-content {
@@ -224,37 +224,6 @@ header .container nav input {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-}
-.about .container {
-  position: relative;
-}
-.contact-card {
-  position: absolute;
-  bottom: 0;
-  left: 200px;
-  background: var(--h2);
-  color: white;
-  padding: 15px;
-  border-radius: 10px;
-  width: 250px;
-  height: 200px;
-}
-.contact-card h3 {
-  color: var(--title);
-  text-align: center;
-  font-weight: 100;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-.contact-card p {
-  font-size: 14px;
-  margin-bottom: 5px;
-  line-height: 2.5;
-}
-@media (max-width: 992px) {
-  .contact-card {
-    display: none;
-  }
 }
 .about .container .about-content .about-image img {
   width: 400px;
@@ -293,7 +262,7 @@ header .container nav input {
   color: var(--h2);
 }
 .pages {
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 .pages .container h2 {
   color: var(--h2);
@@ -314,9 +283,10 @@ header .container nav input {
 .pages .container .pages-content p {
   color: var(--bg);
   font-size: 14px;
+  
 }
 .fastest-food {
-  padding: 10px 0;
+  padding: 10px  10px;
   background-color: var(--background);
 }
 .fastest-food .container {
@@ -366,7 +336,7 @@ header .container nav input {
   font-size: 14px;
 }
 .review {
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 .review .container h2 {
   font-weight: 100;
@@ -398,7 +368,7 @@ header .container nav input {
   padding-top: 10px;
 }
 .blog {
-  padding: 10px 0;
+  padding: 10px 10px;
   background-color: var(--background);
 }
 .blog .container {
